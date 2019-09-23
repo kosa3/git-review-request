@@ -1,11 +1,11 @@
 chrome.runtime.getBackgroundPage(function(background) {
-  let githubcontent = background.githubRequestData;
-  let gitlabcontent = background.gitlabRequestData;
-  let gitlabCustomUrl = background.gitlabCustomUrl;
-  let totalRequests = githubcontent.length + gitlabcontent.length;
+  const githubcontent = background.githubRequestData;
+  const gitlabcontent = background.gitlabRequestData;
+  const gitlabCustomUrl = background.gitlabCustomUrl;
+  const totalRequests = githubcontent.length + gitlabcontent.length;
   chrome.browserAction.setBadgeText({ text: String(totalRequests) });
 
-  let reviewRequest = document.getElementById('reviewRequest');
+  const reviewRequest = document.getElementById('reviewRequest');
   if (totalRequests) {
     reviewRequest.textContent = null;
   }

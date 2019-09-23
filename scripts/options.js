@@ -1,9 +1,9 @@
 // Saves options to chrome.storage
 function save_options() {
-  var github = document.getElementById('github').checked;
-  var gitlab = document.getElementById('gitlab').checked;
-  var assignee = document.getElementById('assignee').value;
-  var customUrl = document.getElementById('custom_url').value;
+  let github = document.getElementById('github').checked;
+  let gitlab = document.getElementById('gitlab').checked;
+  let assignee = document.getElementById('assignee').value;
+  let customUrl = document.getElementById('custom_url').value;
 
   chrome.storage.sync.set({
     github: github,
@@ -12,7 +12,7 @@ function save_options() {
     customUrl: customUrl
   }, function() {
     // Update status to let user know options were saved.
-    var status = document.getElementById('status');
+    let status = document.getElementById('status');
     status.textContent = 'Options saved.';
     setTimeout(function() {
       status.textContent = '';
@@ -29,8 +29,8 @@ function restore_options() {
     assignee: '',
     customUrl: ''
   }, function(items) {
-    var assignee = document.getElementById('assignee');
-    var customUrl = document.getElementById('custom_url');
+    let assignee = document.getElementById('assignee');
+    let customUrl = document.getElementById('custom_url');
 
     document.getElementById('github').checked = items.github;
     document.getElementById('gitlab').checked = items.gitlab;
@@ -50,8 +50,8 @@ function restore_options() {
 }
 
 document.getElementById('gitlab').addEventListener('click', function () {
-  var assignee = document.getElementById('assignee');
-  var customUrl = document.getElementById('custom_url');
+  let assignee = document.getElementById('assignee');
+  let customUrl = document.getElementById('custom_url');
   if (this.checked) {
     assignee.disabled = false;
     customUrl.disabled = false;
