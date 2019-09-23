@@ -1,0 +1,32 @@
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li{
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+li a{
+  display: block;
+  border-left: 8px solid #474655;
+  border-top: 1px solid #474655;
+  border-right: 1px solid #474655;
+  border-bottom: 1px solid #474655;
+  background-color: #fff;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #333;
+  width: 270px;
+  margin: 5px 0px;
+  text-align: left;
+  font-size: 14px;
+}
+li a:hover{
+  border-left: 8px solid #474655;
+  border-top: 1px solid #474655;
+  border-right: 1px solid #474655;
+  border-bottom: 1px solid #474655;
+  background-color: #d7efd7;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "git-review-request",
+  "short_name": "git-review-request",
+  "description": "Can see the reviews you requested for github and gitlab",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "icons": {
+    "128": "icons/icon-128.png"
+  },
+  "browser_action": {
+    "default_popup": "pages/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": ["storage", "background"],
+  "options_page": "pages/options.html",
+  "options_ui": {
+    "page": "pages/options.html",
+    "chrome_style": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}

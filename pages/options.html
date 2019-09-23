@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Options</title>
+</head>
+<body>
+  <p>
+    <label>
+      <input type="checkbox" name="github" id="github">
+      Github
+    </label>
+  </p>
+  <hr>
+
+  <p>
+    <label>
+      <input type="checkbox" name="gitlab" id="gitlab">
+      Gitlab
+    </label>
+    (assignee:
+    <input type="text" name="assignee" id="assignee" size="18" placeholder="your account name">)
+    <br>
+    カスタムURLの場合以下にドメインを設定してください。
+    <input type="text" name="custom_url" id="custom_url" size="30" placeholder="https://git.hogehoge.net">
+  </p>
+
+  <p id="status"></p>
+  <p style="text-align: right"><button id="save">Save</button></p>
+  <script src="../scripts/options.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "git-review-request",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "git-review-request",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "Can see the reviews you requested for github and gitlab",
+    "description": "Can see the reviews you requested for github and gitlab"
+  }
+}
