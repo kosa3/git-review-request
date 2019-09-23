@@ -15,3 +15,6 @@ It is a Chrome Extension that allows you to check the PR and MR you are requesti
 ## Popup
 
 <img width="640" alt="スクリーンショット 2019-09-23 20 53 26" src="https://user-images.githubusercontent.com/19683276/65424067-9119af00-de45-11e9-8ab2-1f85cdcfd97b.png">
+
+## License
+MIT
